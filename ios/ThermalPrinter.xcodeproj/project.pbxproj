@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-
-
-		5E555C0D2413F4C50049A1A2 /* ThermalPrinter.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* ThermalPrinter.mm */; };
+		3BDB6215257110EA00C88B89 /* PrintImageBleWriteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDB6214257110EA00C88B89 /* PrintImageBleWriteDelegate.m */; };
+		3BFAF89B2570A73E0008EE45 /* RNBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAF89A2570A73E0008EE45 /* RNBluetoothManager.m */; };
+		3BFAF8BE257107560008EE45 /* RNBluetoothEscposPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAF8BD257107560008EE45 /* RNBluetoothEscposPrinter.m */; };
+		3BFAF8C3257109D80008EE45 /* ColumnSplitedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAF8C2257109D80008EE45 /* ColumnSplitedString.m */; };
+		3BFAF8C825710A1B0008EE45 /* PrintColumnBleWriteDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAF8C725710A1B0008EE45 /* PrintColumnBleWriteDelegate.m */; };
+		3BFAF8CD25710D760008EE45 /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFAF8CC25710D760008EE45 /* ImageUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +29,18 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libThermalPrinter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libThermalPrinter.a; sourceTree = BUILT_PRODUCTS_DIR; };
-
-
-		B3E7B5881CC2AC0600A0062D /* ThermalPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThermalPrinter.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* ThermalPrinter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ThermalPrinter.mm; sourceTree = "<group>"; };
-
+		3BDB6213257110DC00C88B89 /* PrintImageBleWriteDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintImageBleWriteDelegate.h; sourceTree = "<group>"; };
+		3BDB6214257110EA00C88B89 /* PrintImageBleWriteDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintImageBleWriteDelegate.m; sourceTree = "<group>"; };
+		3BFAF8992570A62A0008EE45 /* RNBluetoothManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBluetoothManager.h; sourceTree = "<group>"; };
+		3BFAF89A2570A73E0008EE45 /* RNBluetoothManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBluetoothManager.m; sourceTree = "<group>"; };
+		3BFAF8BC257107370008EE45 /* RNBluetoothEscposPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNBluetoothEscposPrinter.h; sourceTree = "<group>"; };
+		3BFAF8BD257107560008EE45 /* RNBluetoothEscposPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNBluetoothEscposPrinter.m; sourceTree = "<group>"; };
+		3BFAF8C1257108700008EE45 /* ColumnSplitedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColumnSplitedString.h; sourceTree = "<group>"; };
+		3BFAF8C2257109D80008EE45 /* ColumnSplitedString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColumnSplitedString.m; sourceTree = "<group>"; };
+		3BFAF8C625710A110008EE45 /* PrintColumnBleWriteDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrintColumnBleWriteDelegate.h; sourceTree = "<group>"; };
+		3BFAF8C725710A1B0008EE45 /* PrintColumnBleWriteDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrintColumnBleWriteDelegate.m; sourceTree = "<group>"; };
+		3BFAF8CB25710D6F0008EE45 /* ImageUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageUtils.h; sourceTree = "<group>"; };
+		3BFAF8CC25710D760008EE45 /* ImageUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +65,18 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-
-
-				B3E7B5881CC2AC0600A0062D /* ThermalPrinter.h */,
-				B3E7B5891CC2AC0600A0062D /* ThermalPrinter.mm */,
-
+				3BFAF8992570A62A0008EE45 /* RNBluetoothManager.h */,
+				3BFAF89A2570A73E0008EE45 /* RNBluetoothManager.m */,
+				3BFAF8BC257107370008EE45 /* RNBluetoothEscposPrinter.h */,
+				3BFAF8BD257107560008EE45 /* RNBluetoothEscposPrinter.m */,
+				3BDB6213257110DC00C88B89 /* PrintImageBleWriteDelegate.h */,
+				3BDB6214257110EA00C88B89 /* PrintImageBleWriteDelegate.m */,
+				3BFAF8CB25710D6F0008EE45 /* ImageUtils.h */,
+				3BFAF8CC25710D760008EE45 /* ImageUtils.m */,
+				3BFAF8C625710A110008EE45 /* PrintColumnBleWriteDelegate.h */,
+				3BFAF8C725710A1B0008EE45 /* PrintColumnBleWriteDelegate.m */,
+				3BFAF8C1257108700008EE45 /* ColumnSplitedString.h */,
+				3BFAF8C2257109D80008EE45 /* ColumnSplitedString.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,10 +138,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-
-				5E555C0D2413F4C50049A1A2 /* ThermalPrinter.mm in Sources */,
-
+				3BFAF8BE257107560008EE45 /* RNBluetoothEscposPrinter.m in Sources */,
+				3BFAF89B2570A73E0008EE45 /* RNBluetoothManager.m in Sources */,
+				3BFAF8C825710A1B0008EE45 /* PrintColumnBleWriteDelegate.m in Sources */,
+				3BFAF8CD25710D760008EE45 /* ImageUtils.m in Sources */,
+				3BFAF8C3257109D80008EE45 /* ColumnSplitedString.m in Sources */,
+				3BDB6215257110EA00C88B89 /* PrintImageBleWriteDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,34 +246,22 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ThermalPrinter;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Debug;
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = ThermalPrinter;
 				SKIP_INSTALL = YES;
-
 			};
 			name = Release;
 		};

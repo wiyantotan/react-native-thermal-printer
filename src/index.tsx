@@ -1,9 +1,4 @@
-import { NativeModules } from 'react-native';
+import BluetoothEscposPrinter from './bluetooth_escpos_printer';
+import BluetoothManager from './bluetooth_manager';
 
-type ThermalPrinterType = {
-  multiply(a: number, b: number): Promise<number>;
-};
-
-const { ThermalPrinter } = NativeModules;
-
-export default ThermalPrinter as ThermalPrinterType;
+export { BluetoothManager, BluetoothEscposPrinter };
