@@ -11,7 +11,7 @@ import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import com.reactnativethermalprinter.ThermalPrinterPackage;
+import com.gdschannel.thermalprinter.ThermalPrinterPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 

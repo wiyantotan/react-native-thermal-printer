@@ -5,6 +5,9 @@ type BluetoothEscposPrinterType = {
   printerInit(): Promise<any>;
   printerLeftSpace(sp: number): Promise<any>;
   printerUnderLine(sp: number): Promise<any>;
+  printTextWithCmd(headerCmd: string, bodyText: string, footerCmd: string, encoding: string) : Promise<any>;
+  printImageWithCmd(headerCmd: string, base64Img: string, footerCmd: string) : Promise<any>;
+  printCmd(cmdString: string, initalValue: Array<number>) :  Promise<any>;
   printText(text: string, options: object): Promise<any>;
   rotate(rotate: number): Promise<any>;
   printerAlign(align: number): Promise<any>;

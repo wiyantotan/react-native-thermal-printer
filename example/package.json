@@ -9,6 +9,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "long": "^4.0.0",
     "react": "16.11.0",
     "react-native": "0.62.2"
   },

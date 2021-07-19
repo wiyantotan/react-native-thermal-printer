@@ -1,0 +1,50 @@
+package com.gdschannel.thermalprinter.bluetooth
+
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothServerSocket;
+import android.bluetooth.BluetoothSocket;
+import android.content.Context;
+import android.util.Log;
+
+import java.util.*
+
+class BluetoothService(context : Context) {
+    private class ConnectedThread(device : BluetoothDevice) : Thread() {
+        private val mmDevice : BluetoothDevice = device;
+        private lateinit var mmSocket : BluetoothSocket;
+        private lateinit var mmInStream : InputStream;
+        private lateinit var mmOutStream : OutputStream;
+
+        init {
+          device.getAddress();
+        }
+    }
+    companion object {
+        private const val NAME : String = "BTPrinter";
+        private const val UUID_STR : String = "00001101-0000-1000-8000-00805F9B34FB";
+        const val STATE_NONE : Int = 0; // we're doing nothing
+        const val STATE_CONNECTING : Int = 2; // now initiating an outgoing connection
+        const val STATE_CONNECTED : Int = 3; // now connected to a remote device
+
+        const val MESSAGE_STATE_CHANGE : Int = 4;
+        const val MESSAGE_READ : Int = 5;
+        const val MESSAGE_WRITE : Int = 6;
+        const val MESSAGE_DEVICE_NAME : Int = 7;
+        const val MESSAGE_CONNECTION_LOST : Int = 8;
+        const val MESSAGE_UNABLE_CONNECT : Int = 9;
+
+        // Key names received from the BluetoothService Handler
+        const val DEVICE_NAME : String = "device_name";
+        const val DEVICE_ADDRESS : String = "device_address";
+        const val TOAST : String = "toast";
+
+        const val ErrorMessage : String = "No_Error_Message";
+
+        private val
+    }
+
+    private val mAdapter : BluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+
+}
